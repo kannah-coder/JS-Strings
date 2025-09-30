@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Pattern Printing</title></head>
+<body>
+<h3>Right Triangle Pattern</h3>
+<input type="number" id="rows" placeholder="Enter rows">
+<button onclick="pattern()">Print</button>
+<pre id="result"></pre>
+<script>
+function pattern() {
+  let n = parseInt(document.getElementById('rows').value);
+  let output = "";
+  for (let i = 1; i <= n; i++) output += "*".repeat(i) + "\n";
+  document.getElementById('result').innerText = output;
+}
+</script>
+</body>
+</html>

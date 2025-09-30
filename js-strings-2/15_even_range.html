@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Even Numbers in Range</title></head>
+<body>
+<h3>Even Numbers in a Range</h3>
+<input type="number" id="start" placeholder="Start">
+<input type="number" id="end" placeholder="End">
+<button onclick="findEven()">Show</button>
+<p id="result"></p>
+<script>
+function findEven() {
+  let start = parseInt(document.getElementById('start').value);
+  let end = parseInt(document.getElementById('end').value);
+  let evens = [];
+  for (let i = start; i <= end; i++) if (i % 2 === 0) evens.push(i);
+  document.getElementById('result').innerText = evens.join(", ");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sum of Digits</title></head>
+<body>
+<h3>Sum of Digits</h3>
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="digitSum()">Calculate</button>
+<p id="result"></p>
+<script>
+function digitSum() {
+  let n = document.getElementById('num').value;
+  let sum = 0;
+  for (let i = 0; i < n.length; i++) sum += parseInt(n[i]);
+  document.getElementById('result').innerText = "Sum = " + sum;
+}
+</script>
+</body>
+</html>
