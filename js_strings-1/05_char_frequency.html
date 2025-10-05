@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Character Frequency</title></head>
+<body>
+  <h2>Character Frequency</h2>
+  <input type="text" id="str" placeholder="Enter text">
+  <button onclick="charFreq()">Count</button>
+  <pre id="out"></pre>
+  <script>
+    function charFreq() {
+      let str = document.getElementById("str").value;
+      let freq = {};
+      for (let ch of str) {
+        freq[ch] = (freq[ch] || 0) + 1;
+      }
+      let result = "";
+      for (let k in freq) {
+        result += k + " : " + freq[k] + "\n";
+      }
+      document.getElementById("out").innerText = result;
+    }
+  </script>
+</body>
+</html>

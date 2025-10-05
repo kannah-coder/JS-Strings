@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>First Non-Repeating Character</title></head>
+<body>
+  <h2>First Non-Repeating Character</h2>
+  <input type="text" id="str" placeholder="Enter text">
+  <button onclick="firstNonRepeat()">Find</button>
+  <p id="out"></p>
+  <script>
+    function firstNonRepeat() {
+      let str = document.getElementById("str").value;
+      for (let ch of str) {
+        if (str.indexOf(ch) === str.lastIndexOf(ch)) {
+          document.getElementById("out").innerText = "First Non-Repeating: " + ch;
+          return;
+        }
+      }
+      document.getElementById("out").innerText = "No Non-Repeating Character";
+    }
+  </script>
+</body>
+</html>

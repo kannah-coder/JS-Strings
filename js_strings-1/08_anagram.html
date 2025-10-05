@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Anagram Check</title></head>
+<body>
+  <h2>Anagram Check</h2>
+  <input type="text" id="str1" placeholder="Enter first word">
+  <input type="text" id="str2" placeholder="Enter second word">
+  <button onclick="checkAnagram()">Check</button>
+  <p id="out"></p>
+  <script>
+    function checkAnagram() {
+      let s1 = document.getElementById("str1").value.toLowerCase().split("").sort().join("");
+      let s2 = document.getElementById("str2").value.toLowerCase().split("").sort().join("");
+      document.getElementById("out").innerText = (s1 === s2) ? "Anagram" : "Not Anagram";
+    }
+  </script>
+</body>
+</html>

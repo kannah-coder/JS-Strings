@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Substring Occurrences</title></head>
+<body>
+  <h2>Substring Occurrences</h2>
+  <input type="text" id="str" placeholder="Enter text">
+  <input type="text" id="sub" placeholder="Enter substring">
+  <button onclick="countSub()">Count</button>
+  <p id="out"></p>
+  <script>
+    function countSub() {
+      let str = document.getElementById("str").value;
+      let sub = document.getElementById("sub").value;
+      let count = 0, pos = str.indexOf(sub);
+      while (pos !== -1) {
+        count++;
+        pos = str.indexOf(sub, pos + 1);
+      }
+      document.getElementById("out").innerText = "Occurrences: " + count;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Palindrome Check</title></head>
+<body>
+  <h2>Check Palindrome</h2>
+  <input type="text" id="str" placeholder="Enter text">
+  <button onclick="checkPalindrome()">Check</button>
+  <p id="out"></p>
+  <script>
+    function checkPalindrome() {
+      let str = document.getElementById("str").value;
+      let rev = str.split("").reverse().join("");
+      document.getElementById("out").innerText = (str === rev) ? "Palindrome" : "Not Palindrome";
+    }
+  </script>
+</body>
+</html>

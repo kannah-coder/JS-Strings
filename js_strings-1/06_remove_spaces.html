@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Remove Spaces</title></head>
+<body>
+  <h2>Remove Spaces</h2>
+  <input type="text" id="str" placeholder="Enter text">
+  <button onclick="removeSpaces()">Remove</button>
+  <p id="out"></p>
+  <script>
+    function removeSpaces() {
+      let str = document.getElementById("str").value;
+      let noSpace = "";
+      for (let ch of str) {
+        if (ch !== " ") noSpace += ch;
+      }
+      document.getElementById("out").innerText = noSpace;
+    }
+  </script>
+</body>
+</html>
