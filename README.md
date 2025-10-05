@@ -1,4 +1,4 @@
-# JS-Strings-2
+# JS-Strings
 
 # Beginner JavaScript Programs
 
