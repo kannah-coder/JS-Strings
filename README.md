@@ -8,6 +8,20 @@ A collection of simple, beginner-friendly **JavaScript** programs demonstrating 
 
 ## 📂 Files 
 
+## js-strings-1:
+
+* reverse.js
+* palindrome.js
+* vowelsConsonants.js
+* firstNonRepeatingChar.js
+* charFrequency.js
+* removeSpaces.js
+* longestWord.js
+* anagram.js
+* titleCase.js
+* substringOccurrence.js
+
+## js-strings-2:
 * `sum.js` — Add two numbers.
 * `multiplication.js` — Multiply two numbers or generate a multiplication table.
 * `factorial.js` — Calculate factorial of a number.
@@ -18,6 +32,8 @@ A collection of simple, beginner-friendly **JavaScript** programs demonstrating 
 * `pattern.js` — Print simple star/number patterns.
 * `multiples_3_and_5.js` — Find numbers (or sum) that are multiples of 3 and 5.
 * `prime_check.js` — Check if a number is prime.
+
+ 
 
 ---
 
