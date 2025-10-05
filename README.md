@@ -3,6 +3,7 @@
 # Beginner JavaScript Programs
 
 A collection of simple, beginner-friendly **JavaScript** programs demonstrating fundamental concepts such as arithmetic operations, loops, conditionals, number manipulation, and patterns. Perfect for practice, learning, and showcasing on GitHub.
+These are few examples that helps you a lot about strings and clears the concept
 
 ---
 
